@@ -4,7 +4,9 @@ html {
 
 body {
   margin: 0;
-  font-family: "Work Sans", sans-serif;
+  font-family: cursive;
+  /* font-family: "Work Sans", sans-serif; */
+  background-color: #ffc5e6;
 }
 
 .container {
@@ -81,6 +83,8 @@ body {
   bottom: 5px;
   color: #fff;
   background-color: rgb(21, 161, 237);
+  /* rgb(255,37,126) */
+  /* rgb(21, 161, 237) */
   padding: 5px 8px;
   border-radius: 3px;
 }
@@ -297,4 +301,9 @@ body {
     font-size: 1.5rem;
     font-weight: lighter;
   }
+}
+
+.girl-dp{
+  width: 120px;
+  height: 120px;
 }
