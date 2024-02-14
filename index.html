@@ -13,15 +13,18 @@
   </head>
 
   <body>
-    <script>
-      let audio = document.getElementById("myAudio");
-      audio.volume = 0.5;
-  </script>
-  
-  <audio autoplay loop id="myAudio">
+    <audio autoplay loop muted id="myAudio">
       <source src="Music/303PM(LOOP)_230312.wav" type="audio/wav">
   </audio>
-  
+
+<script>
+    document.addEventListener("click", function() {
+    var audio = document.getElementById("myAudio");
+    audio.muted = false; // Unmute the audio
+});
+    document.getElementById("myAudio").volume = 0.2;
+</script>
+
     <div class="container">
       <div class="one">
         <h1 class="one">
@@ -134,7 +137,7 @@
       </div>
       <div class="nine">
         <p>Okay, tell me if you liked it. :></p>
-        <p id="replay">Or click, if you want to watch it again.</p>
+        <p id="replay">Or click <b>here</b>, if you want to watch it again.</p>
         <p class="last-smile">:)</p>
       </div>
     </div>
